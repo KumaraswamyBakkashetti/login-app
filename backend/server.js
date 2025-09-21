@@ -20,7 +20,7 @@ connectDB();
 app.use("/api/auth", authRoutes);
 
 // Server
-const PORT = 1000;
+const PORT = 9000;
 app.listen(PORT, () => 
   {
     
