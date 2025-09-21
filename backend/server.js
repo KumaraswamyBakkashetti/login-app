@@ -7,6 +7,7 @@ const authRoutes = require("./routes/authRoutes");
 
 dotenv.config();
 const app = express();
+app.use(express.json());
 
 // Middlewares
 app.use(cors());
@@ -19,7 +20,7 @@ connectDB();
 app.use("/api/auth", authRoutes);
 
 // Server
-const PORT = process.env.PORT || 9000;
+const PORT = 1000;
 app.listen(PORT, () => 
   {
     
