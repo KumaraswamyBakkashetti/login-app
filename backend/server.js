@@ -20,7 +20,11 @@ connectDB();
 app.use("/api/auth", authRoutes);
 
 // Server
+<<<<<<< HEAD
 const PORT = 1000;
+=======
+const PORT = 9000;
+>>>>>>> 8925e1a78a05c8fb534a9f19ccafbd35a33fdb74
 app.listen(PORT, () => 
   {
     
